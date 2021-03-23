@@ -1,0 +1,354 @@
+@font-face{
+	font-family:'Gugi';
+	src:url('fonts/Gugi-Regular.ttf');
+}
+@font-face{
+	font-family:'OSans';
+	src:url('fonts/OpenSans-Regular.ttf');
+}
+*{overflow-x:hidden; transition:all 0.3s linear;}
+*{ position:relative; }
+
+a{
+	margin:0;
+	padding-top:10px;
+	text-decoration: none;
+	color:#fff;
+	cursor:pointer;
+}
+a:hover{color:#0f5;}
+body{
+	margin:0;
+}
+
+
+.fc{
+	width:100vw;
+	height:100vh;
+	background:#001;
+	color:#fff;
+	font-family:'Gugi';
+	overflow:hidden;
+}
+.header{
+	height: 50px;
+	z-index:5;
+	color:#0f5;
+}
+.dash{
+	z-index:2;
+}
+.overflow-container{
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.left-banner > .overflow-container{
+	width:100px;
+	height:100vh;
+}
+.right-banner > .overflow-container{
+	height:100vh;
+}
+.left-banner > .overflow-container > a{
+	width:100px;
+	height:100px;
+	display:block;
+	text-align:center;
+	line-height:100px;
+	color:#fff;
+	font-size:35px;
+}
+.container{
+	margin:20px;
+	min-height:1px;
+}	
+
+/*About Specific*/
+.quick-links {
+	margin-top:50px;
+}
+.quick-links > a{
+	padding:7px;
+	padding-bottom:4px;
+	padding-right:5px;
+	background:#0f5;
+	color:#000;
+	display:inline-block;
+	border-radius:2px;
+}
+/*/About Specific*/
+
+/*Project specific*/
+.projects{
+	white-space:nowrap;
+	overflow-x:auto;
+	width:calc(100vw - 160px);
+	overflow-y:hidden;
+	perspective: 1000px;
+	padding:20px;
+	box-sizing:border-box;
+	opacity: 0.7
+}
+.projects::before{
+	content:'Projects>';
+	transform:translateY(calc(40vh - 50%));
+	display:inline-block;
+	padding-right:50px; 
+	font-size:30px;
+	transition: all 0.3s linear;
+}
+.projects:hover::before{
+	color:#05f;
+}
+.project{
+	display:inline-flex;
+	width:350px;
+	height:80vh;
+	background:#112;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-radius:20px;
+	box-shadow:0 0 5px #000;
+	margin-right:-200px;
+	transform-style: preserve-3d;
+	flex-direction:row-reverse;
+}
+.project > .dependencies{
+	background:#225;
+	overflow-x:visible;
+}
+.project > .dependencies > .dependency{
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	line-height:57.5px;
+	font-size:25px;
+	background:#225;
+	text-align:center;
+	border-bottom:1px solid #000;
+	cursor:pointer;
+}
+.project > .dependencies > .dependency > .tooltip-left{
+	height:50px;
+	line-height:50px;
+	font-size:15px;
+	background:#000;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	padding-left:10px;
+	padding-right: 10px;
+	opacity:0;
+	background: black;
+}
+.project > .description > .details {
+	padding:10px;
+	white-space:normal;
+	font-size:15px;
+	color:#aaa;
+}
+.project > .dependencies > .dependency:hover{
+	background:#05f;
+	overflow:visible;
+}
+.project > .dependencies > .dependency:hover > .tooltip-left{
+	opacity:1;
+}
+.project > .description > .name {
+	height:50px;
+	line-height:50px;
+	margin-top:-50px;
+	background:#000;
+	color:#fff;
+	padding-left:10px;
+}	
+
+.project:hover{
+	transform:rotateY(5deg) rotateZ(-2deg);
+	margin-right:20px;
+}
+.project:hover > .description > .name{
+	color:#000;
+	background:#fff;
+	margin-top:0px;
+}
+/*/Project specific*/
+#skills .fs25{
+
+	margin-bottom:20px;
+}
+#skills > .wrap {
+	border-radius:40px;
+	padding:0px;
+	/*background: rgba(255, 255, 255, 0.1); */
+	display:inline-block;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+#skills > .wrap >  .fs20{
+	color:#fff;
+	padding:5px;
+	border:2px solid #f05;
+	border-radius:30px;
+	display:inline-block;
+	min-width:80px;
+	cursor:pointer;
+	margin-left:10px;
+	box-shadow:0px 0px 3px #000;
+}
+#skills > .wrap > .fs20:hover{
+	background:white;
+	color:#f05;
+}
+
+/*#skills > .fs15:hover{
+	color:#05f;
+	background:#000;
+}*/
+
+
+
+#contact > div > a{
+
+	background:linear-gradient(45deg, #fff, #fff, #0f5, #05f);
+	-webkit-text-fill-color:transparent;
+	-webkit-background-clip:text;
+	background-size:400% 100%;
+	background-position:0% 0%;
+}
+#contact > div > a:hover{
+	background-position:95% 0%;
+}
+
+
+
+
+.particle{
+	position:absolute;
+	-webkit-animation-name:rotateandmoveup;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function:linear;
+	background:rgba(255,0,255,0.1);	
+}
+
+.flex{ display:flex; }
+.flexc{ display:flex; flex-direction: column;}
+.flexy{ flex:1; }
+
+.slightly-dark-background{ background:rgba(0,0,0,0.01); }
+.slightly-light-background{ background:rgba(255,255,255,0.04); }
+.light-background{ background: rgba(255,255, 255, 0.1); }
+.dark-background{ background: rgba(0,0,0,0.1);}
+.ultra-light-background{ background: rgba(255, 255, 255, 0.4); }
+.ultra-dark-background{ background: rgba(0,0,0,0.4); }
+
+
+.shadow{ box-shadow: 0px 0px 5px #000; }
+
+.rounded{border-radius:20px;}
+.circle{border-radius:50%;}
+.bordered{border:2px solid #0f5;}
+.padded{padding:20px;}
+.fs12{font-size:12px;}
+.fs20{font-size:20px;}
+.fs25{font-size:25px;}
+.fs50{font-size:50px;}
+.margined{margin:20px;}
+.details{font-family:'OSans';}
+.centered{text-align:center;}
+
+
+.hovered{background:#05f;}
+.active{background:#f05;}
+.opacify{opacity:0.7;}
+
+.abso-down-label{
+	position:absolute;
+	bottom:10px;
+	width:100%;
+	left:0;
+	text-align:center;
+	line-height:normal;
+}
+.name{color:#0f5;}
+.details{color:#aaa;}
+.address{color:#fff;}
+
+.blinker{
+	margin-left:2px;
+	padding-left:5px;
+	padding-right:5px;
+	width:10px;
+	background:#0f5;
+	-webkit-animation:op infinite 1.5s linear;
+	color:#000;
+}
+
+.tooltip-left{
+	position:absolute;
+	top:0;
+	right:99%;
+	z-index:1000;
+}
+
+
+@-webkit-keyframes op{
+	from, to{opacity:1;}
+	50%{opacity:0;}
+}
+@-webkit-keyframes rotateandmoveup{
+	from{bottom:-200px;transform:none;}
+	to{bottom:100vh;transform: rotate(360deg)}
+}
+
+
+
+.f-00f{color:blue;}
+.f-ff0{color:yellow;}
+.f-000{color:black;}
+
+.rotateyourdevice{
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	left:0;
+	top:0;
+	text-align:center;
+	display:none;
+	background:#001;
+	color:#fff;
+	z-index:100;
+	font-size:15px;
+	white-space: pre-wrap;
+}
+
+@media only screen and (orientation:portrait){
+
+	.rotateyourdevice{
+		display:block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*:hover{opacity:1;}
