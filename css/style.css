@@ -11,7 +11,7 @@
 
 a{
 	margin:0;
-	padding-top:10px;
+	padding-top:0.625rem;
 	text-decoration: none;
 	color:#fff;
 	cursor:pointer;
@@ -31,7 +31,7 @@ body{
 	overflow:hidden;
 }
 .header{
-	height: 50px;
+	height: 3.125rem;
 	z-index:5;
 	color:#0f5;
 }
@@ -44,36 +44,36 @@ body{
 	height:100%;
 }
 .left-banner > .overflow-container{
-	width:100px;
+	width:6.25rem;
 }
 .left-banner > .overflow-container > a{
-	width:100px;
-	height:100px;
+	width:6.25rem;
+	height:6.25rem;
 	display:block;
 	text-align:center;
-	line-height:100px;
+	line-height:6.25rem;
 	color:#fff;
-	font-size:35px;
+	font-size:2.1875rem;
 }
 .container{
-	margin:20px;
-	min-height:1px;
+	margin:1.25rem;
+	min-height:0.0625rem;
 }	
 
 /*About Specific*/
 .quick-links {
-	margin-top:50px;
+	margin-top:3.125rem;
 }
 .quick-links > a{
-	padding:7px;
-	padding-bottom:4px;
-	padding-right:5px;
+	padding:0.4375rem;
+	padding-bottom:0.25rem;
+	padding-right:0.3125rem;
 	background:#0f5;
 	color:#000;
 	display:inline-block;
-	border-radius:2px;
+	border-radius:0.125rem;
 }
-/*/About Specific*/
+/**/About Specific*/
 
 /*Project specific*/
 .projects{
@@ -81,8 +81,8 @@ body{
 	overflow-x:auto;
 	width:calc(100vw - 160px);
 	overflow-y:hidden;
-	perspective: 1000px;
-	padding:20px;
+	perspective: 62.5rem;
+	padding:1.25rem;
 	box-sizing:border-box;
 	opacity: 0.7
 }
@@ -90,8 +90,8 @@ body{
 	content:'Projects>';
 	transform:translateY(calc(40vh - 50%));
 	display:inline-block;
-	padding-right:50px; 
-	font-size:30px;
+	padding-right:3.125rem; 
+	font-size:1.875rem;
 	transition: all 0.3s linear;
 }
 .projects:hover::before{
@@ -99,14 +99,14 @@ body{
 }
 .project{
 	display:inline-flex;
-	width:350px;
+	width:21.875rem;
 	height:80vh;
 	background:#112;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-radius:20px;
-	box-shadow:0 0 5px #000;
-	margin-right:-200px;
+	border-top-right-radius: 1.25rem;
+	border-bottom-right-radius: 1.25rem;
+	border-radius:1.25rem;
+	box-shadow:0 0 0.3125rem #000;
+	margin-right:-12.5rem;
 	transform-style: preserve-3d;
 	flex-direction:row-reverse;
 }
@@ -115,32 +115,31 @@ body{
 	overflow-x:visible;
 }
 .project > .dependencies > .dependency{
-	width:50px;
-	height:50px;
+	width:3.125rem;
+	height:3.125rem;
 	overflow:hidden;
-	line-height:57.5px;
-	font-size:25px;
+	line-height:3.5938rem;
+	font-size:1.5625rem;
 	background:#225;
 	text-align:center;
-	border-bottom:1px solid #000;
+	border-bottom:0.0625rem solid #000;
 	cursor:pointer;
 }
 .project > .dependencies > .dependency > .tooltip-left{
-	height:50px;
-	line-height:50px;
-	font-size:15px;
+	height:3.125rem;
+	line-height:3.125rem;
+	font-size:0.9375rem;
 	background:#000;
-	border-top-left-radius: 25px;
-	border-bottom-left-radius: 25px;
-	padding-left:10px;
-	padding-right: 10px;
+	border-top-left-radius: 1.5625rem;
+	border-bottom-left-radius: 1.5625rem;
+	padding-left:0.625rem;
+	padding-right: 0.625rem;
 	opacity:0;
 	background: black;
 }
 .project > .description > .details {
-	padding:10px;
+	padding:0.625rem;
 	white-space:normal;
-	font-size:15px;
 	color:#aaa;
 }
 .project > .dependencies > .dependency:hover{
@@ -151,47 +150,47 @@ body{
 	opacity:1;
 }
 .project > .description > .name {
-	height:50px;
-	line-height:50px;
-	margin-top:-50px;
+	height:3.125rem;
+	line-height:3.125rem;
+	margin-top:-3.125rem;
 	background:#000;
 	color:#fff;
-	padding-left:10px;
+	padding-left:0.625rem;
 }	
 
 .project:hover{
 	transform:rotate(2deg);
-	margin-right:20px;
+	margin-right:1.25rem;
 }
 .project:hover > .description > .name{
 	color:#000;
 	background:#fff;
-	margin-top:0px;
+	margin-top:0rem;
 }
-/*/Project specific*/
+/**/Project specific*/
 #skills .fs25{
 
-	margin-bottom:20px;
+	margin-bottom:1.25rem;
 }
 #skills > .wrap {
-	border-radius:40px;
-	padding:0px;
+	border-radius:2.5rem;
+	padding:0rem;
 	/*background: rgba(255, 255, 255, 0.1); */
 	display:inline-block;
-	padding-top:5px;
-	padding-left:5px;
-	padding-right:5px;
+	padding-top:0.3125rem;
+	padding-left:0.3125rem;
+	padding-right:0.3125rem;
 }
 #skills > .wrap >  .fs20{
 	color:#fff;
-	padding:5px;
-	border:2px solid #f05;
-	border-radius:30px;
+	padding:0.3125rem;
+	border:0.125rem solid #f05;
+	border-radius:1.875rem;
 	display:inline-block;
-	min-width:80px;
+	min-width:5rem;
 	cursor:pointer;
-	margin-left:10px;
-	box-shadow:0px 0px 3px #000;
+	margin-left:0.625rem;
+	box-shadow:0rem 0rem 0.1875rem #000;
 }
 #skills > .wrap > .fs20:hover{
 	background:white;
@@ -233,17 +232,17 @@ body{
 .ultra-dark-background{ background: rgba(0,0,0,0.4); }
 
 
-.shadow{ box-shadow: 0px 0px 5px #000; }
+.shadow{ box-shadow: 0rem 0rem 0.3125rem #000; }
 
-.rounded{border-radius:20px;}
+.rounded{border-radius:1.25rem;}
 .circle{border-radius:50%;}
-.bordered{border:2px solid #0f5;}
-.padded{padding:20px;}
-.fs12{font-size:12px;}
-.fs20{font-size:20px;}
-.fs25{font-size:25px;}
-.fs50{font-size:50px;}
-.margined{margin:20px;}
+.bordered{border:0.125rem solid #0f5;}
+.padded{padding:1.25rem;}
+.fs12{font-size:0.75rem;}
+.fs20{font-size:1.25rem;}
+.fs25{font-size:1.5625rem;}
+.fs50{font-size:3.125rem;}
+.margined{margin:1.25rem;}
 .details{font-family:'OSans';}
 .centered{text-align:center;}
 
@@ -254,7 +253,7 @@ body{
 
 .abso-down-label{
 	position:absolute;
-	bottom:10px;
+	bottom:0.625rem;
 	width:100%;
 	left:0;
 	text-align:center;
@@ -265,10 +264,10 @@ body{
 .address{color:#fff;}
 
 .blinker{
-	margin-left:2px;
-	padding-left:5px;
-	padding-right:5px;
-	width:10px;
+	margin-left:0.125rem;
+	padding-left:0.3125rem;
+	padding-right:0.3125rem;
+	width:0.625rem;
 	background:#0f5;
 	-webkit-animation:op infinite 1.5s linear;
 	color:#000;
@@ -308,7 +307,7 @@ body{
 	background:#001;
 	color:#fff;
 	z-index:100;
-	font-size:15px;
+	font-size:0.9375rem;
 	white-space: pre-wrap;
 }
 
@@ -321,7 +320,7 @@ body{
 		text-align:center;
 	}
 	#about img{
-		margin-top:20px;
+		margin-top:1.25rem;
 	}
 	.projects {
 		width:100%;
@@ -329,7 +328,7 @@ body{
 	.project {
 		display:flex;
 		height:auto;
-		margin:10px;
+		margin:0.625rem;
 		width:100%;
 	}
 	.left-banner > .overflow-container {
@@ -338,18 +337,30 @@ body{
 	}
 	.left-banner > .overflow-container > a {
 		display:inline-block;
-		width:80px;
-		height:80px;
+		width:8rem;
+		height: 8rem;
 		overflow:hidden;
-		padding-top:0px;
+		padding-top:0rem;
+		font-size:5rem;
 	}
 	.abso-down-label {
-		bottom:1px;
+		bottom:0.0625rem;
 	}
 	/* .rotateyourdevice{
 		display:block;
 	} */
-
+	
+	.fs12{font-size:2rem;}
+	.fs20{font-size:3.5rem;}
+	.fs25{font-size:4rem;}
+	.fs50{font-size:9rem;}
+	.project > .description > .name {
+		line-height:normal;
+		height:auto;
+	}
+	/* i {
+		font-size:3rem;
+	} */
 }
 
 
