@@ -41,13 +41,10 @@ body{
 .overflow-container{
 	overflow-x:hidden;
 	overflow-y:auto;
+	height:100%;
 }
 .left-banner > .overflow-container{
 	width:100px;
-	height:100vh;
-}
-.right-banner > .overflow-container{
-	height:100vh;
 }
 .left-banner > .overflow-container > a{
 	width:100px;
@@ -163,7 +160,7 @@ body{
 }	
 
 .project:hover{
-	transform:rotateY(5deg) rotateZ(-2deg);
+	transform:rotate(2deg);
 	margin-right:20px;
 }
 .project:hover > .description > .name{
@@ -206,22 +203,15 @@ body{
 	background:#000;
 }*/
 
-
-
-#contact > div > a{
-
-	background:linear-gradient(45deg, #fff, #fff, #0f5, #05f);
-	-webkit-text-fill-color:transparent;
-	-webkit-background-clip:text;
-	background-size:400% 100%;
-	background-position:0% 0%;
-}
-#contact > div > a:hover{
-	background-position:95% 0%;
+/* #contact {
+	position: fixed;
+	right:5vw;
+	bottom:5vh;
 }
 
-
-
+#contact > div {
+	
+} */
 
 .particle{
 	position:absolute;
@@ -323,10 +313,43 @@ body{
 }
 
 @media only screen and (orientation:portrait){
-
-	.rotateyourdevice{
-		display:block;
+	.dash{
+		flex-direction:column;
 	}
+	#about .flex{
+		flex-direction:column;
+		text-align:center;
+	}
+	#about img{
+		margin-top:20px;
+	}
+	.projects {
+		width:100%;
+	}
+	.project {
+		display:flex;
+		height:auto;
+		margin:10px;
+		width:100%;
+	}
+	.left-banner > .overflow-container {
+		text-align:center;
+		width:100%;
+	}
+	.left-banner > .overflow-container > a {
+		display:inline-block;
+		width:80px;
+		height:80px;
+		overflow:hidden;
+		padding-top:0px;
+	}
+	.abso-down-label {
+		bottom:1px;
+	}
+	/* .rotateyourdevice{
+		display:block;
+	} */
+
 }
 
 
